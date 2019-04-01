@@ -1,2 +1,2 @@
-# portfolio
-Modern Portfolio Template Using HTML5 &amp; CSS3
+# gulp-frontend-starter
+frontend starter pack using gulp js
