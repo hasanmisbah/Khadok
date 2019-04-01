@@ -47,6 +47,7 @@ Please make sure to update tests as appropriate.
 
 ## dependency
 
+```json
 "@babel/core": "^7.4.0",
 "@babel/preset-env": "^7.4.2",
 "browser-sync": "^2.26.3",
@@ -67,7 +68,8 @@ Please make sure to update tests as appropriate.
 "gulp-sass": "^4.0.2",
 "gulp-sourcemaps": "^2.6.5",
 "gulp-uglify": "^3.0.2",
-"merge-stream": "^1.0.1",
+"merge-stream": "^1.0.1"
+```
 
 ## Contributor 
 
