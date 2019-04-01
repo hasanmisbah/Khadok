@@ -19,9 +19,6 @@
     const sourcemaps = require('gulp-sourcemaps');
     // merge stram for custom Javascript
     const merge = require('merge-stream');
-
-    // clean folder before builing
-    const clean = require('gulp-clean');
     // browsersync to serve locally
     const browserSync = require('browser-sync').create();
     //javascript Minifier
@@ -45,10 +42,8 @@
 
     // babel
     const babel = require('gulp-babel');
+
     const inject = require('gulp-inject');
-
-
-
 
     let banner = ['/**',
         '   Theme Name    : <%= pkg.name %>',
@@ -107,6 +102,7 @@
             path: 'slick-carousel/slick'
         }
     ];
+    
     let fonts = [{
             src: '@fortawesome/fontawesome-free',
             dest: 'font-awesome'
@@ -134,15 +130,6 @@
         }
     }
 
-    function devclean(done) {
-        gulp.src('dev/**/*', {
-                read: false
-            })
-            .pipe(clean({
-                force: true
-            }));
-        done();
-    }
 
     function modernizrbuild(done) {
         gulp.src(appPath.src + '/**/*.js')
@@ -179,14 +166,6 @@
     function html(done) {
         gulp.src(appPath.src + '**/*.html')
             .pipe(gulp.dest(pathName() + '/'))
-            .pipe(browserSync.stream());
-        done();
-    }
-
-    function js(done) {
-        gulp.src(appPath.src + '/scripts/scripts.js')
-            .pipe(gulpwebpack(webpackconfig, webpack))
-            .pipe(gulp.dest(pathName() + '/scripts/'))
             .pipe(browserSync.stream());
         done();
     }
@@ -285,25 +264,13 @@
         return;
     }
 
-
-    exports.html = html;
-    exports.assets = assets;
-    exports.newjs = staticjS;
-    exports.js = js;
-    exports.css = css;
-    exports.vendor = gulp.series(modernizrbuild, font, vendor);
-    exports.font = font;
-    exports.clean = devclean;
-    exports.watch = gulp.parallel(vendor, assets, css, staticjS, images, browsers, watch_file);
-    exports.default = gulp.parallel(modernizrbuild, assets, vendor, images, font, css, staticjS);
-
     function dependency(done) {
         gulp.src('./dependency.json')
 
             .pipe(inject(gulp.src([
-                './'+pathName()+'/**/*.js',
-                './'+pathName()+'/**/*.css',
-                './'+pathName()+'/**/*.html',
+                './' + pathName() + '/**/*.js',
+                './' + pathName() + '/**/*.css',
+                './' + pathName() + '/**/*.html',
             ], {
                 read: false
             }), {
@@ -317,4 +284,14 @@
             .pipe(gulp.dest('./'));
         done();
     }
+
+
+    exports.html = html;
+    exports.assets = assets;
+    exports.newjs = staticjS;
+    exports.css = css;
+    exports.font = font;
     exports.dependency = dependency;
+    exports.vendor = gulp.series(modernizrbuild, font, vendor);
+    exports.watch = gulp.parallel(vendor, assets, html, css, staticjS, images, browsers, watch_file);
+    exports.default = gulp.parallel(modernizrbuild, html, assets, vendor, images, font, css, staticjS);
