@@ -1,0 +1,43 @@
+
+// Main App Color
+$colors : (
+    dark : (
+        primary     : #845EC2,
+        secondary   : #D65DB1,
+        option      : #FF6F91 
+    ),
+    light : (
+        primary     : #F9F871,
+        secondary   : #FEFEDF,
+        option      : #4FFBDF
+    )
+);
+
+
+// gradient if  use
+@mixin gradient($rotation, $color-1, $color-2, $color-3:null) {
+    // if 3 colored gradient needed to use
+    @if($color-3 != null){
+        background: $color-1;
+        background: linear-gradient(#{$rotation}deg, $color-1 0%, #{$color-2} 35%, #{$color-3} 100%);
+    }
+    // if just 2 colored
+    @else{
+        background: $color-1;
+        background: linear-gradient(#{$rotation}deg, $color-1 0%, #{$color-3} 100%);
+    }
+}
+
+@mixin primary-gradient {
+    @include gradient(90, rgba(2,0,36,1), rgba(132,94,194,1), rgba(44,115,210,1));
+}
+
+
+// function to get Color in apps
+@function color ($base, $color){
+    /** 
+    * @param color
+    * @return color, base
+    */
+    @return map-get(map-get($colors, $color), $base);
+}

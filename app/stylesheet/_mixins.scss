@@ -1,0 +1,41 @@
+
+
+// Media Query Mixins
+@mixin media($min-width:null, $max-width:null) {
+
+    @if($min-width != null and $max-width != null){
+        @media screen and (min-width : #{$min-width}) and (max-width : #{$max-width}) {
+            @content;
+        }
+    }@else if($min-width != null and $max-width == null){
+        @media screen and (min-width: #{$min-width}) {
+            @content;
+        }
+    }@else if($min-width == null and $max-width != null){
+        @media screen and (max-width: #{$max-width}) {
+            @content;
+          }
+    }
+}
+
+//Device Based Media Query
+@mixin mediaSm {
+    @include media($max-width:500px){
+        @content;
+    };
+}
+@mixin mediaMd {
+    @include media($max-width:768px){
+        @content;
+    };
+}
+@mixin mediaLg {
+    @include media($min-width:769px, $max-width:1170px){
+        @content;
+    };
+}
+@mixin mediaXl {
+    @include media($min-width: 1171px){
+        @content;
+    };
+}

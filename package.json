@@ -1,0 +1,55 @@
+{
+    "name": "monu",
+    "version": "1.0.0",
+    "description": "A personal portfolio Project",
+    "main": "index.html",
+    "scripts": {
+        "dev": "gulp vendor && gulp watch",
+        "build": "gulp"
+    },
+    "keywords": [
+        "portfolio",
+        " one page"
+    ],
+    "author": "Hasan Misbah <hasanmisbah01@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
+        "browser-sync": "^2.26.3",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-header": "^2.0.7",
+        "gulp-headerfooter": "^1.0.3",
+        "gulp-imagemin": "^5.0.3",
+        "gulp-modernizr": "^3.1.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-options": "^1.1.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-pretty-html": "^2.0.9",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "merge-stream": "^1.0.1",
+        "webpack": "^4.29.6",
+        "webpack-stream": "^5.2.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.7.2",
+        "bootstrap": "^4.3.1",
+        "devicon": "^2.0.0",
+        "devicons": "^1.8.0",
+        "jquery": "^3.3.1",
+        "jquery-circle-progress": "^1.2.2",
+        "jquery-knob": "git+https://github.com/aterrien/jQuery-Knob.git",
+        "modernizr": "^3.7.0",
+        "popper.js": "^1.14.7",
+        "prefixfree": "^1.0.0",
+        "slick-carousel": "^1.8.1",
+        "typed.js": "^2.0.10",
+        "waypoints": "^4.0.1"
+    }
+}

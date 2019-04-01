@@ -1,0 +1,22 @@
+{
+  "tagname-lowercase": true,
+  "attr-lowercase": true,
+  "attr-value-double-quotes": true,
+  "doctype-first": true,
+  "tag-pair": true,
+  "spec-char-escape": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true,
+  "title-require": true,
+  "head-script-disabled": true,
+  "alt-require": true,
+  "doctype-html5": true,
+  "attr-unsafe-chars": true,
+  "csslint": {
+    "display-property-grouping": true,
+    "known-properties": true
+  },
+  "jshint": {},
+  "attr-value-not-empty": true
+}

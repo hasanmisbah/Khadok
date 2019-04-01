@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+
+//Import Css Reset to avoid Browser css
+@import 'reset';
+
+//import Base Configuration Configuration
+@import 'app';
+
+// Import Mixins
+@import 'mixins';
+
+
+.__has{
+    @at-root{
+        section{
+            padding: 20px;
+        }
+    }
+}
