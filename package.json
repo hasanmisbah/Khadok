@@ -34,9 +34,7 @@
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify": "^3.0.2",
-        "merge-stream": "^1.0.1",
-        "webpack": "^4.29.6",
-        "webpack-stream": "^5.2.1"
+        "merge-stream": "^1.0.1"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.7.2",
