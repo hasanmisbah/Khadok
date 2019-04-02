@@ -245,6 +245,9 @@
 
     function staticjS(done) {
         gulp.src(appPath.src + '/scripts/scripts.js')
+            .pipe(header(banner, {
+                pkg: pkg,
+            }))
             .pipe(sourcemaps.init())
             .pipe(babel({
                 presets: ['@babel/env']
@@ -288,7 +291,7 @@
 
     exports.html = html;
     exports.assets = assets;
-    exports.newjs = staticjS;
+    exports.js = staticjS;
     exports.css = css;
     exports.font = font;
     exports.dependency = dependency;
