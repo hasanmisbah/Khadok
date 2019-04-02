@@ -26,6 +26,7 @@ to install Dependency then start coding on `app/` folder
 ```bash
 gulp
 ```
+edit `app.json` File for CSS banner
 
 to intial build (you will found everything on `dev/` folder)
 

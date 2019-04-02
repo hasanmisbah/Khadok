@@ -47,9 +47,9 @@
 
     let banner = ['/**',
         '   Theme Name    : <%= pkg.name %>',
-        '   Theme URI     : https://github.com/hasanmisbah/',
+        '   Theme URI     : <%= pkg.uri %>',
         '   Author        : <%= pkg.author %>',
-        '   Author URI    : https://github.com/hasanmisbah/',
+        '   Author URI    : <%= pkg.author_uri %>',
         '   Description   : <%= pkg.description %>',
         '   version       : <%= pkg.version %>',
         '   license       : <%= pkg.license %>',
