@@ -1,0 +1,56 @@
+#restaurant-menu{
+    .food-menu-slider{
+       @include mediaLg{
+           display: none;
+        }
+        @include mediaXl{
+            display: none;
+        }
+    }
+    .book-container{
+        @include mediaSm{
+            display: none;
+        }
+        @include mediaMd{
+            display: none;
+        }
+    }
+}
+#home{
+    .banner-content{
+        h2{
+            @include mediaSm{
+                font-size: 36px;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+#header{
+    .navbar.fixed-top{
+        @include mediaSm{
+            display: block;
+            overflow: hidden;
+            margin-top: 20px;
+            padding: 15px 10px;
+            
+        }
+    }
+    .navbar-dark{
+        .navbar-toggler{
+            @include mediaSm{
+                margin-right: 15px;
+                background-color: $black;
+            }
+        }
+    }
+}
+#top-cta{
+    .cta-text{
+        h2{
+            @include mediaSm{
+                font-size: 70px;
+            }
+        }
+    }
+}

@@ -1,26 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Hasan Misbah">
-    <title>Monu Mia || Frontend Developer</title>
-
+    <title>Khadok || The Foodies Palace</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/vendor/devicon/devicon.min.css">
     <link rel="stylesheet" href="./assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/vendor/date-picker/jquery.datepicker2.css">
+    <link rel="stylesheet" href="./assets/vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
 <body>
-    <h1>Hello World</h1>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand " href="#">Khadok</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="0" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="1" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="2" href="#">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="3" href="#">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="4" href="#">Dishes</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="5" href="#">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="6" href="#">Chef</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="7" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll-nav="8" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Slide Area -->
+        <section id="home" data-scroll-index="0">
+            <div class="home-slider owl-carousel">
+                <div class="single-slide s-1">
+                    <div class="slider-content zoom"></div>
+                </div>
+                <div class="single-slide s-2">
+                    <div class="slider-content zoom"></div>
+                </div>
+            </div>
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-text">
+                                <img src="./assets/images/khadok-logo-01.png" alt="Khadok logo">
+                                <h2>Delicious Food Zone</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home Slide Area -->
+        <!-- About Section -->
+        <section id="about" data-scroll-index="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>About Khadok</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi possimus, rerum at natus delectus neque illo hic quisquam ullam suscipit quo recusandae magnam doloribus sed quidem facilis voluptatem? Id reiciendis quam dolorem error sunt laudantium aspernatur numquam inventore, neque eligendi modi deleniti cum, eius beatae at optio magni repudiandae minus?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus ut cum omnis quae, totam aliquid? Vero est aperiam non fugiat!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus ut cum omnis quae, totam aliquid? Vero est aperiam non fugiat!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="promo" data-aos="fade-right">
+                            <div class="promo-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="promo-text">
+                                <h2>Special Chef</h2>
+                                <p>Claritas est etiam processus dynamicus qui sequitur mutationem consuetudium lectorum Mirum est notare quam littera gothi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="promo" data-aos="fade-down-right">
+                            <div class="promo-icon">
+                                <i class="fas fa-hamburger"></i>
+                            </div>
+                            <div class="promo-text">
+                                <h2>Fresh Food</h2>
+                                <p>Claritas est etiam processus dynamicus qui sequitur mutationem consuetudium lectorum Mirum est notare quam littera gothi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="promo" data-aos="fade-left">
+                            <div class="promo-icon">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <div class="promo-text">
+                                <h2>Good Taste</h2>
+                                <p>Claritas est etiam processus dynamicus qui sequitur mutationem consuetudium lectorum Mirum est notare quam littera gothi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+        <!-- Special Packages -->
+        <section id="special-packages" data-scroll-index="2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>Special Package</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="package-slider owl-carousel" data-aos="fade-up">
+
+                            <div class="single-package">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="package-images">
+                                            <img class="img-fluid" src="./assets/images/offer_img_1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="package-text">
+                                            <h3>40% off for 9'' - 12'' pizza <span>Wed, Thu, Friday only</span></h3>
+                                            <ul>
+                                                <li><i class="fa fa-check"></i>Buy One Get On Offer</li>
+                                                <li><i class="fa fa-check"></i>Buy One Get On Offer</li>
+                                                <li><i class="fa fa-check"></i>Only Buy One Get On Offer</li>
+                                            </ul>
+                                            <a href="#" class="btn btn-md btn-danger">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-package">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="package-images">
+                                            <img class="img-fluid" src="./assets/images/offer_img_2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="package-text">
+                                            <h3>50% off for 12'' - 12'' pizza <span>Mon, Thu, Sunday only</span></h3>
+                                            <ul>
+                                                <li><i class="fa fa-check"></i>Buy One Get On Offer</li>
+                                                <li><i class="fa fa-check"></i>Only Buy One Get On Offer</li>
+                                                <li><i class="fa fa-check"></i>Buy One Get On Offer</li>
+                                            </ul>
+                                            <a href="#" class="btn btn-md btn-danger">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Special Packages -->
+        <!-- top CTA -->
+        <section id="top-cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-text">
+                            <p class="he" data-aos="fade-down-left">ITS ALL ABOUT</p>
+                            <h2 data-aos="fade-down-right">Good Food</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end top CTA -->
+        <!-- Restaurant Menu -->
+        <section id="restaurant-menu" data-scroll-index="3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>Khadok Menu</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mx-auto">
+                        <div class="book-container" data-aos="fade-down-right">
+                            <div class="book-cover">
+                                <img src="./assets/images/menu.jpeg" alt="menu images">
+                            </div>
+                            <div class="page-container">
+                                <div class="pages">
+
+                                    <div class="page-content">
+                                        <div class="content-inner">
+                                            <h2>Break Fast</h2>
+                                            <div class="text">
+                                                <img src="./assets/images/food-img.png" alt="Food icon">
+                                                <ul>
+                                                    <li>Dosa <span>: $12.00</span></li>
+                                                    <li>Ghee Roast <span>: $06.00</span></li>
+                                                    <li>Masala Dosa <span>: $10.00</span></li>
+                                                    <li>Egg omlet <span>: $09.00</span></li>
+                                                    <li>Egg burji <span>: $09.00</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="page-content">
+                                        <div class="content-inner">
+                                            <h2>Lunch</h2>
+                                            <div class="text">
+                                                <img src="./assets/images/food-img.png" alt="Food icon">
+                                                <ul>
+                                                    <li>Dosa <span>: $12.00</span></li>
+                                                    <li>Ghee Roast <span>: $06.00</span></li>
+                                                    <li>Masala Dosa <span>: $10.00</span></li>
+                                                    <li>Egg omlet <span>: $09.00</span></li>
+                                                    <li>Egg burji <span>: $09.00</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="page-content">
+                                        <div class="content-inner">
+                                            <h2>Dinner</h2>
+                                            <div class="text">
+                                                <img src="./assets/images/food-img.png" alt="Food icon">
+                                                <ul>
+                                                    <li>Dosa <span>: $12.00</span></li>
+                                                    <li>Ghee Roast <span>: $06.00</span></li>
+                                                    <li>Masala Dosa <span>: $10.00</span></li>
+                                                    <li>Egg omlet <span>: $09.00</span></li>
+                                                    <li>Egg burji <span>: $09.00</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="page-content">
+                                        <div class="content-inner">
+                                            <h2>Special Item</h2>
+                                            <div class="text">
+                                                <img src="./assets/images/food-img.png" alt="Food icon">
+                                                <ul>
+                                                    <li>Dosa <span>: $12.00</span></li>
+                                                    <li>Ghee Roast <span>: $06.00</span></li>
+                                                    <li>Masala Dosa <span>: $10.00</span></li>
+                                                    <li>Egg omlet <span>: $09.00</span></li>
+                                                    <li>Egg burji <span>: $09.00</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider for Smaller Device -->
+                        <div class="food-menu-slider owl-carousel" data-aos="fade-down-right">
+                                <div class="single-slide">
+                                    <div class="content-inner">
+                                        <h2>BreakFast</h2>
+                                        <div class="text">
+                                            <img src="./assets/images/food-img.png" alt="Food icon">
+                                            <ul>
+                                                <li>Dosa <span>: $12.00</span></li>
+                                                <li>Ghee Roast <span>: $06.00</span></li>
+                                                <li>Masala Dosa <span>: $10.00</span></li>
+                                                <li>Egg omlet <span>: $09.00</span></li>
+                                                <li>Egg burji <span>: $09.00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-slide">
+                                    <div class="content-inner">
+                                        <h2>Lunch</h2>
+                                        <div class="text">
+                                            <img src="./assets/images/food-img.png" alt="Food icon">
+                                            <ul>
+                                                <li>Dosa <span>: $12.00</span></li>
+                                                <li>Ghee Roast <span>: $06.00</span></li>
+                                                <li>Masala Dosa <span>: $10.00</span></li>
+                                                <li>Egg omlet <span>: $09.00</span></li>
+                                                <li>Egg burji <span>: $09.00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="single-slide">
+                                    <div class="content-inner">
+                                        <h2>Dinner</h2>
+                                        <div class="text">
+                                            <img src="./assets/images/food-img.png" alt="Food icon">
+                                            <ul>
+                                                <li>Dosa <span>: $12.00</span></li>
+                                                <li>Ghee Roast <span>: $06.00</span></li>
+                                                <li>Masala Dosa <span>: $10.00</span></li>
+                                                <li>Egg omlet <span>: $09.00</span></li>
+                                                <li>Egg burji <span>: $09.00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-slide">
+                                    <div class="content-inner">
+                                        <h2>Special Item</h2>
+                                        <div class="text">
+                                            <img src="./assets/images/food-img.png" alt="Food icon">
+                                            <ul>
+                                                <li>Dosa <span>: $12.00</span></li>
+                                                <li>Ghee Roast <span>: $06.00</span></li>
+                                                <li>Masala Dosa <span>: $10.00</span></li>
+                                                <li>Egg omlet <span>: $09.00</span></li>
+                                                <li>Egg burji <span>: $09.00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end Slider for Smaller Device -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Restaurant Menu -->
+
+
+        <!-- Dish Section -->
+        <section id="dishes" data-scroll-index="4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>Regular Dishes</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="single-dishes" data-aos="fade-down-right">
+                            <div class="dish-img">
+                                <a href="#"><img src="./assets/images/signature-1.jpeg" alt="Signature"></a>
+                            </div>
+                            <div class="dish-text">
+                                <h3><a href="#">Noodles er vorta</a></h3>
+                                <ul class="dish-item">
+                                    <li>Rice 1 Plets <span>: £12.50</span></li>
+                                    <li>Salad 1 Plets <span>: £05.50</span></li>
+                                    <li>Checken 2 Piece <span>: £02.50</span></li>
+                                    <li>Soft Drink <span>: £09.50</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-dishes" data-aos="fade-down-left">
+                            <div class="dish-img">
+                                <a href="#"><img src="./assets/images/signature-3.jpeg" alt="Signature"></a>
+                            </div>
+                            <div class="dish-text">
+                                <h3><a href="#">Kekkapa's Special</a></h3>
+                                <ul class="dish-item">
+                                    <li>Rice 1 Plets <span>: £12.50</span></li>
+                                    <li>Salad 1 Plets <span>: £05.50</span></li>
+                                    <li>Checken 2 Piece <span>: £02.50</span></li>
+                                    <li>Soft Drink <span>: £09.50</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-dishes" data-aos="fade-down-left">
+                            <div class="dish-img">
+                                <a href="#"><img src="./assets/images/signature-4.jpeg" alt="Signature"></a>
+                            </div>
+                            <div class="dish-text">
+                                <h3><a href="#">Noddles er Khichuri</a></h3>
+                                <ul class="dish-item">
+                                    <li>Rice 1 Plets <span>: £12.50</span></li>
+                                    <li>Salad 1 Plets <span>: £05.50</span></li>
+                                    <li>Checken 2 Piece <span>: £02.50</span></li>
+                                    <li>Soft Drink <span>: £09.50</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Dish Section -->
+
+        <!-- Reservation Section -->
+        <section id="reservation" data-scroll-index="5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="booking-left">
+                            <div class="section-title">
+                                <h2>Book A Table</h2>
+                            </div>
+                            <div class="booking-form" data-aos="zoom-in-right">
+                                <form action="#">
+                                    <div class="form-group row">
+                                        <div class="col-12 col-md-6">
+                                            <p><input class="form-control" type="text" name="name" id="name" placeholder="Name"></p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p><input class="form-control" type="email" name="email" id="email" placeholder="Email"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-md-6">
+                                            <p><input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone"></p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p><input class="form-control" type="number" name="Person" id="person" placeholder="Person"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-md-6">
+                                            <p><input type="date" class="form-control" name="date" id="date" data-select="datepicker" placeholder="Expected Date"></p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p><input class="form-control" type="text" name="ocation" id="ocation" placeholder="Ocation"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-md-12">
+                                            <p><textarea class="form-control" name="messages" id="messages" placeholder="Special Request"></textarea></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-md-12">
+                                            <p><button class="btn btn-lg btn-danger" type="submit">Make a Reservation</button></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="booking-right" data-aos="zoom-in-left">
+                            <img src="./assets/images/lchef.png" alt="Main Chef">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Reservarion -->
+
+        <!-- Team Section -->
+        <section id="team" data-scroll-index="6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2>Expert Chef</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <div class="single-chef" data-aos="fade-up">
+                            <div class="chef-images">
+                                <img src="./assets/images/chef-1.jpg" alt="Main Chef">
+                            </div>
+                            <div class="chef-text">
+                                <h3><a href="#">Abul Mia</a></h3>
+                                <p>Khichuri Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <div class="single-chef" data-aos="fade-down">
+                            <div class="chef-images">
+                                <img src="./assets/images/chef-2.jpg" alt="Main Chef">
+                            </div>
+                            <div class="chef-text">
+                                <h3><a href="#">Morjina Khatun</a></h3>
+                                <p>Alu vorta Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <div class="single-chef" data-aos="fade-up">
+                            <div class="chef-images">
+                                <img src="./assets/images/chef-3.jpg" alt="Main Chef">
+                            </div>
+                            <div class="chef-text">
+                                <h3><a href="#">Jorina Khatun</a></h3>
+                                <p>Shutki vorta Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <div class="single-chef" data-aos="fade-down">
+                            <div class="chef-images">
+                                <img src="./assets/images/chef-4.jpg" alt="Main Chef">
+                            </div>
+                            <div class="chef-text">
+                                <h3><a href="#">Khan Helal</a></h3>
+                                <p>Noodles juice Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Team Section -->
+
+        <!-- Call To Action -->
+        <section id="res-cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-text text-center">
+                            <h2 data-aos="fade-right">For instant Booking</h2>
+                            <p data-aos="fade-left">+44-703-183-5784</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Call To Action -->
+
+        <!-- Blog Section -->
+        <section id="blog" data-scroll-index="7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2>Latest News</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-12">
+                            <div class="single-blog card" data-aos="flip-left">
+                                <div class="blog-images">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/blog-post-1.jpeg" alt="Blog Images">
+                                    </a>
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="date">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-meta">
+                                        <p><i class="fa fa-eye"></i>255</p>
+                                        <p><i class="fa fa-comment"></i>23</p>
+                                        <p><a href="#"><i class="fa fa-user"></i>Admin</a></p>
+                                    </div>
+                                    <h3><a href="#">Dipisici Sed Do Eiusmod</a></h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, accusamus!</p>
+                                    <a href="#" class="readmore">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12">
+                            <div class="single-blog card" data-aos="flip-up">
+                                <div class="blog-images">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/blog-post-2.jpeg" alt="Blog Images">
+                                    </a>
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="date">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-meta">
+                                        <p><i class="fa fa-eye"></i>255</p>
+                                        <p><i class="fa fa-comment"></i>23</p>
+                                        <p><a href="#"><i class="fa fa-user"></i>Chef</a></p>
+                                    </div>
+                                    <h3><a href="#">Dipisici Sed Do Eiusmod</a></h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, accusamus!</p>
+                                    <a href="#" class="readmore">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12">
+                            <div class="single-blog card" data-aos="flip-right">
+                                <div class="blog-images">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/blog-post-3.jpeg" alt="Blog Images">
+                                    </a>
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="date">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-meta">
+                                        <p><i class="fa fa-eye"></i>255</p>
+                                        <p><i class="fa fa-comment"></i>23</p>
+                                        <p><a href="#"><i class="fa fa-user"></i>Kamla</a></p>
+                                    </div>
+                                    <h3><a href="#">Dipisici Sed Do Eiusmod</a></h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, accusamus!</p>
+                                    <a href="#" class="readmore">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" data-scroll-index="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2>Get In Touch</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <div class="contact-form" data-aos="flip-left">
+                            <form action="#">
+                                <p><input type="text" name="name" id="names" placeholder="Name"></p>
+                                <p><input type="email" name="email" id="emails" placeholder="Email"></p>
+                                <p><textarea name="messages" id="messagess"
+                                        placeholder="Write your message here..."></textarea></p>
+                                <p><button type="submit" class="btn btn-lg btn-danger primary-btn">Submit</button></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <div class="contact-right" data-aos="flip-right">
+                            <div class="single-contact-info">
+                                <h3>Opening Hours 8:00 AM - 10:00 PM <span>10% Off Friday Only</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="single-contact-info">
+                                <p>157/B, White Oak Drive Kansas City</p>
+                                <p>689 - Lynn Street, South Boston</p>
+                            </div>
+                            <div class="single-contact-info details">
+                                <p><span>Fax : </span> +44 1643 001 500</p>
+                                <p><span>Phone : </span> +44 927 4585 22</p>
+                                <p><span>Email : </span> khadok@kubtesh.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <!-- Site Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="social-nav">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright text-center">
+                        <p>Copyright &copy; Khadok 2019 || allright Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
     <script src="./assets/vendor/modernizr/modernizr.min.js"></script>
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/popper.js/popper.min.js"></script>
     <script src="./assets/vendor/prefixfree/prefixfree.min.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/vendor/date-picker/jquery.datepicker2.min.js"></script>
+    <script src="./assets/vendor/turnjs/turn.min.js"></script>
+    <script src="./assets/vendor/scrollIt/scrollIt.min.js"></script>
+    <script src="./assets/vendor/aos/aos.js"></script>
     <script src="./scripts/scripts.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 // Main App Color
 $colors : (
     dark : (
-        primary     : #845EC2,
+        primary     : #ca3d26,
         secondary   : #D65DB1,
         option      : #FF6F91 
     ),
@@ -40,4 +40,12 @@ $colors : (
     * @return color, base
     */
     @return map-get(map-get($colors, $color), $base);
+}
+$primary-font:'Lato', sans-serif;
+$secondary-font: 'Dancing Script', cursive;
+$primary-color: color(primary, dark);
+$black : #151617;
+
+img, video, iframe{
+    max-width: 100%;
 }

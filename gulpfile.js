@@ -258,7 +258,7 @@
 
     function watch_file() {
         gulp.watch('./app/**/*.scss', gulp.series(css, reload));
-        gulp.watch('./app/**/*.html', gulp.parallel(inject, reload));
+        gulp.watch('./app/**/*.html', gulp.parallel(html, reload));
         gulp.watch('./app/**/*.js', gulp.series(staticjS, reload));
         gulp.watch('./app/assets/images/**', gulp.series(images, reload));
         gulp.watch('./app/assets/vendor/**', gulp.series(assets, reload));

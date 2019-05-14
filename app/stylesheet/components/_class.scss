@@ -1,0 +1,155 @@
+
+%section-title {
+    width: 100%;
+    text-align: center;
+    h2 {
+        font-size: 55px;
+        font-family: $secondary-font;
+        color: $primary-color;
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 80%;
+            height: 2px;
+            background-color: $black;
+            left: 10%;
+            bottom: 0;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: $primary-color;
+            bottom: -6.5px;
+            transform: rotate(45deg);
+            border: 3px solid #fff;
+        }
+    }
+}
+
+
+%menu-item{
+    background: #fff none repeat scroll;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('../assets/images/food.png');
+        z-index: -1
+    }
+    .content-inner{
+        padding: 20px;
+        text-align: center;
+        vertical-align: middle;
+        h2{
+            padding: 2px 5px;
+            text-align: center;
+            background-color: $primary-color;
+            color: #fff;
+            margin: 15px 0;
+        }
+        .text{
+            display: block;
+            width: 100%;
+            img{
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            ul{
+                margin:0;
+                padding: 0;
+                text-align: left;
+                li{
+                    list-style: none;
+                    text-align: left;
+                    margin: 3px;
+                    color: #333;
+                    text-transform: capitalize;
+                    span{
+                       float: right; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+%zoom {
+	animation: zoom 15s ease 0s normal both infinite;
+	-webkit-animation: zoom 15s ease 0s normal both infinite;
+	-moz-animation: zoom 15s ease 0s normal both infinite;
+	-ms-animation: zoom 15s ease 0s normal both infinite;
+	-o-animation: zoom 15s ease 0s normal both infinite;
+}
+
+@-webkit-keyframes zoom {
+	0% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes zoom {
+	0% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes zoom {
+	0% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes zoom {
+	0% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
